@@ -1,0 +1,357 @@
+/* start common*/
+body{
+    background-color: #f5f5f5;
+}
+a {
+    font-family: 'Carter One', cursive;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Aclonica', sans-serif;
+    margin-bottom: 0px;
+}
+p{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-bottom: 0px;
+}
+.p-main p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+/*title*/
+.main-title h2{
+    font-size: 2.5rem;
+    letter-spacing: 1.2px;
+}
+.main-title p{
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    word-spacing: 1.2px;
+}
+.main-line{
+    height: 5px;
+    width: 3%;
+}
+/* end common*/
+/* start navbar*/
+.logo-nav{
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.a-nav{
+    font-size: 16px;
+    text-transform: capitalize;
+    position: relative;
+}
+.a-nav::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width .5s;
+}
+.a-nav::after{
+    width: 0%;
+}
+.a-nav:hover::after , .a-active::after {
+    width: 100%;
+}
+.bg-transparent-nav{
+    background-color: #343a408f;
+}
+@media screen and (max-width: 992px){
+    .a-nav::after {
+        width: 0%;
+        display: inline-block;
+    }
+    .a-nav:hover::after , .a-active::after {
+        width: 10%;
+    }    
+}
+/* end navbar*/
+/* start home*/
+.bg-home{
+    background-image: url('../images/bg/intro-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.layout{
+    background-color: rgba(0, 0, 0, .5);
+}
+.layout h1{
+    letter-spacing: 5px;
+}
+.typing::before{
+    content: "";
+    animation: typingtitle infinite 12s;
+}
+@keyframes typingtitle{
+    0% {    content: "web desinger";}
+    1% {    content: "web desinger";}
+    2% {    content: "web desinger";}
+    3% {    content: "web designe";}
+    4% {    content: "web design";}
+    5% {    content: "web desig";}
+    6% {    content: "web desi";}
+    7% {    content: "web des";}
+    8% {    content: "web de";}
+    9% {    content: "web d";}
+    10% {    content: "web";}
+    11% {    content: "we";}
+    12% {    content: "w";}
+    13% {    content: "";}
+    14% {    content: "";}
+    15% {    content: "w";}
+    16% {    content: "we";}
+    17% {    content: "web";}
+    18% {    content: "web d";}
+    19% {    content: "web de";}
+    20% {    content: "web dev";}
+    21% {    content: "web deve";}
+    22% {    content: "web devel";}
+    23% {    content: "web develo";}
+    24% {    content: "web develop";}
+    25% {    content: "web develope";}
+    27% {    content: "web developer";}
+    29% {    content: "web developer";}
+    31% {    content: "web developer";}
+    32% {    content: "web develope";}
+    33% {    content: "web develop";}
+    34% {    content: "web develo";}
+    35% {    content: "web devel";}
+    36% {    content: "web deve";}
+    37% {    content: "web dev";}
+    38% {    content: "web de";}
+    39% {    content: "web d";}
+    40% {    content: "web";}
+    41% {    content: "we";}
+    42% {    content: "w";}
+    43% {    content: "";}
+    44% {    content: "";}
+    45% {    content: "fr";}
+    46% {    content: "fron";}
+    47% {    content: "fronte";}
+    48% {    content: "frontend";}
+    49% {    content: "frontend de";}
+    50% {    content: "frontend deve";}
+    51% {    content: "frontend develo";}
+    52% {    content: "frontend develope";}
+    54% {    content: "frontend developer";}
+    56% {    content: "frontend developer";}
+    58% {    content: "frontend developer";}
+    59% {    content: "frontend develop";}
+    60% {    content: "frontend devel";}
+    61% {    content: "frontend dev";}
+    62% {    content: "frontend d";}
+    63% {    content: "frontend";}
+    64% {    content: "fronte";}
+    65% {    content: "fron";}
+    66% {    content: "fr";}
+    67% {    content: "";}
+    68% {    content: "";}
+    69% {    content: "ba";}
+    70% {    content: "back";}
+    71% {    content: "backen";}
+    72% {    content: "backend ";}
+    73% {    content: "backend de";}
+    74% {    content: "backend deve";}
+    75% {    content: "backend develo";}
+    76% {    content: "backend develope";}
+    78% {    content: "backend developer";}
+    80% {    content: "backend developer";}
+    82% {    content: "backend developer";}
+    84% {    content: "backend developer";}
+    86% {    content: "backend developer";}
+    87% {    content: "backend develop";}
+    88% {    content: "backend devel";}
+    90% {    content: "backend dev";}
+    92% {    content: "backen";}
+    94% {    content: "back";}
+    96% {    content: "ba";}
+    98% {    content: "";}
+    100% {    content: "";}
+}
+/* end home*/
+/* start about*/
+.table-about{
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    font-family: 'Abel', sans-serif;
+}
+.line-about{
+    height: 3px;
+    width: 20%;
+}
+.p-about p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.title-progress-about p{
+    font-size: 1.2rem;
+}
+.progress-about .myprogress{
+    height: 12px;
+}
+.width1-progress{
+    width: 85%;
+}
+.width2-progress{
+    width: 95%;
+}
+.width3-progress{
+    width: 90%;
+}
+/* end about */
+/* start services */
+.item-service i{
+    font-size: 3.5rem;
+    width: 8rem;
+    height: 8rem;
+    line-height: 7rem;
+    border-width: 10px !important;
+    transition: background-color .5s ,color .5s, border-color .5s;
+}
+.item-service h3{
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
+.item-service p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+.item-service:hover i{
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #8bbcf1 !important;
+}
+/* end services */
+/* start layout */
+.bg-number{
+    background-image: url("../images/bg/counters-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.layout-number{
+    background-color: #0077ff9f;
+    padding: 4rem;
+}
+.item-layout i{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    border: 10px solid #b8dbffec;
+}
+/* end layout */
+/* start portfolio*/
+.mycard h3{
+    font-size: 1.1rem;
+}
+.item-card {
+    font-size: .9rem;
+}
+.img-card{
+    overflow: hidden;
+}
+.all-card img{
+    transition: transform .5s;
+}
+.all-card:hover img{
+    transform: scale(1.2, 1.2);
+}
+.item-card i {
+    font-size: 3rem;
+}
+/* end portfolio*/
+/* start carousel */
+.bg-carousell-contact{
+    background-image: url("../images/bg/overlay-bg.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* padding: 10rem 0; */
+}
+.layout-carousell-contact{
+    background-color: #0077ff9f;
+}
+.carousell-content img{
+    width: 17%;
+}
+.carousell-content p{
+    font-size: 1.1rem;
+}
+.carousell-content i{
+    font-size: 1.7rem ;
+}
+@media screen and (max-width:992px){
+    .carousell-content img{
+        width: 30%;
+    }
+    .carousell-content p{
+        font-size: 1.1rem;
+    }
+    .carousell-content i{
+        font-size: 1.7rem ;
+    }    
+}
+/* end carousel */
+/* start blog */
+.bolg-footer{
+    background-color: #f8f8f8;
+}
+.bolg-footer img{
+    width: 12%;
+}
+.adv{
+    font-size: .7rem;
+    bottom: -5%;
+    right: 50%;
+    transform:translateX(50%);
+}
+@media screen and (max-width: 992px){
+    .adv{
+        bottom: -3%;
+    }    
+}
+/* end blog */
+/* start all form */
+.form-message .line-message{
+    height: 3px;
+    width: 20%;    
+}
+.get-touch p{
+    font-size: 1.25rem;
+}
+.get-touch ul{
+    padding-left: 0% !important;
+}
+.get-touch li{
+    list-style-type: none;
+}
+.link-brand a{
+    text-align: center;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    color: black;
+    background-color: #ffffff;
+    border: 3.5px solid #007bff;
+    margin-right: .7rem;
+    padding-top: .1rem;
+    border-radius: 50%;
+    transition: background-color .5s ,color .5s, border-color .5s;
+}
+.link-brand a:hover{
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #8bbcf1;
+}
+/* end all form */
